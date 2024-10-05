@@ -3,7 +3,7 @@
 # Get the Windows username dynamically
 WINDOWS_USER=$(powershell.exe '$env:UserName' | tr -d '\r')
 
-# Define the path to the Documents folder
+# Define the path to the Documents folder / Default for WIN11
 DOCUMENTS_PATH="/mnt/c/Users/$WINDOWS_USER/Documents"
 
 # Check if the path exists
